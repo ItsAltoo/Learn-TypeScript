@@ -50,6 +50,7 @@ const sayHello = (name: string) => {
   console.log(`Hello ${name}`);
 };
 
+
 console.log(create());
 console.log(math());
 sayHello("wanjay");
