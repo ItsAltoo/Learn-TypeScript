@@ -12,7 +12,7 @@ dataMahasiswa = [1250, "mancap", false];
 let friends;
 // TIPE DATA CUSTOM
 friends = {
-    name: "Node",
+    nama: "Node",
     Absen: true,
     class: "A",
     nim: 1230,
@@ -31,8 +31,8 @@ function create() {
 const math = () => {
     return 20 - 2;
 };
-const sayHello = (name) => {
-    console.log(`Hello ${name}`);
+const sayHello = (nama) => {
+    console.log(`Hello ${nama}`);
 };
 console.log(create());
 console.log(math());
@@ -59,12 +59,12 @@ console.log(typeof arr);
 console.log("====================================");
 // Object
 let obj;
-obj = { name: "Malik", age: 18 };
+obj = { nama: "Malik", age: 18 };
 console.log(obj);
 console.log(typeof obj);
 console.log("====================================");
 let person;
-person = { name: "Malik", age: 18, nim: 1230 };
+person = { nama: "Malik", age: 18, nim: 1230 };
 console.log(person);
 console.log(typeof person);
 // interface bisa dijadikan sebagai tipe data custom yang bisa digunakan untuk menentukan tipe data dari sebuah variabel atau parameter.
@@ -88,7 +88,7 @@ phoneNumber = "08123456789";
 console.log(phoneNumber);
 console.log(typeof phoneNumber);
 let user;
-user = { name: "Malik", age: 18, nim: 1230 };
+user = { nama: "Malik", age: 18, nim: 1230 };
 console.log(user);
 console.log(typeof user);
 console.log("====================================");
@@ -108,4 +108,10 @@ console.log(typeof ade);
 let ad = (a, b) => a + b;
 console.log(ad(10, 20));
 console.log(typeof ad);
+// mengapa harus menggunakan let ad: Add; ? karena dengan menggunakan let ad: Add; kita bisa mengetahui bahwa ad adalah variabel yang bertipe data Add.
+// apa yang terjadi jika let di ganti type? akan error karena type tidak dikenali oleh typescript.
+// apakah bisa langsung memanggil type add tanpa let? bisa, tapi tidak disarankan karena akan membuat kode menjadi ambigu.
+// contohnya seperti ini
+// (a, b) => a + b;
+// console.log(add(10, 20));  
 console.log("====================================");

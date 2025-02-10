@@ -3,10 +3,10 @@ let myAge: number = 18;
 let bool: boolean = false;
 
 // initialisasi awal kosong nilainya
-let namaSaya: string[];
+let nameSaya: string[];
 
-// isi data namaSaya
-namaSaya = ["Malik", "akbar"];
+// isi data nameSaya
+nameSaya = ["Malik", "akbar"];
 
 // tuple array
 let dataMahasiswa: [number, string, boolean];
@@ -33,7 +33,7 @@ friends = {
 console.log({ myName });
 console.log({ myAge });
 console.log({ bool });
-console.log({ namaSaya });
+console.log({ nameSaya });
 console.log({ dataMahasiswa });
 console.log({ friends });
 
